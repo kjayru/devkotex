@@ -1,0 +1,50 @@
+﻿@model KotexPasaLaVoz.Models.Rule
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Rule</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Text)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Text)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Person.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Person.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ImageId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ImageId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Enable)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Enable)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Created)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Created)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

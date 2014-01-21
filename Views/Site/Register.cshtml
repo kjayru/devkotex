@@ -1,0 +1,12 @@
+﻿﻿@model KotexPasaLaVoz.Models.Person
+
+@{
+    ViewBag.Title = "Register";
+}
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+
+}

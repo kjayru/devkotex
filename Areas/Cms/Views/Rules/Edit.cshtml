@@ -1,0 +1,70 @@
+﻿@model KotexPasaLaVoz.Models.Rule
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Rule</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Text)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Text)
+            @Html.ValidationMessageFor(model => model.Text)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PersonId, "Person")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("PersonId", String.Empty)
+            @Html.ValidationMessageFor(model => model.PersonId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ImageId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ImageId)
+            @Html.ValidationMessageFor(model => model.ImageId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Enable)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Enable)
+            @Html.ValidationMessageFor(model => model.Enable)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Created)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Created)
+            @Html.ValidationMessageFor(model => model.Created)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

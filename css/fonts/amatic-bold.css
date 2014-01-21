@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'AmaticBold';
+    src: url('amatic-bold.eot');
+    src: url('amatic-bold.eot') format('embedded-opentype'),
+         url('amatic-bold.woff') format('woff'),
+         url('amatic-bold.ttf') format('truetype'),
+         url('amatic-bold.svg#AmaticBold') format('svg');
+}

@@ -1,0 +1,14 @@
+
+.section.create .bottom {
+text-align: center;
+line-height: 79px;
+color: #fff;
+font-family: 'Amatic-Bold';
+font-size: 25px;
+}.extra-wrap {zoom:1;}
+
+a.nocolor,.nocolor a{
+	//color:expression(this.parentNode.currentStyle.color);
+}
+
+img { -ms-interpolation-mode: bicubic; }
