@@ -12,3 +12,7 @@ a.nocolor,.nocolor a{
 }
 
 img { -ms-interpolation-mode: bicubic; }
+#ascensorFloor2{
+	background:#fff;
+	z-index:101;
+	}

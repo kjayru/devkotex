@@ -1,12 +1,23 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p,
+blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn,
+em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt,
+var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form,
+label, legend,table, caption, tbody, tfoot, thead, tr, th,
+td,article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby, section,
+summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;
+	font: inherit;	vertical-align: baseline;
+	}
+	article, aside, details, figcaption,
+	 figure, footer, header, hgroup,
+	  menu, nav, section {
+		  	display: block;}
+body {	line-height: 1;
+}ol, ul {	list-style: none;}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}
+table {	border-collapse: collapse;	border-spacing: 0;}
+
 html,
 button,
 input,
@@ -148,7 +159,7 @@ textarea {
 	height: 120px !important;
 	}
 .model-1 .text {
-  color: #fff;
+  color: #000;
 }
 .model-2 {
   background: url(../img/bg/2.jpg) no-repeat scroll 0 0 #000000;
@@ -333,10 +344,7 @@ textarea {
   overflow: hidden;
   z-index:100;
 }
-#ascensorFloor2{
-	background:#fff;
-	z-index:101;
-	}
+
 .rules #sections .section {
   position: relative;
 }
@@ -1569,8 +1577,15 @@ textarea {
 	height: 271px !important;
 	line-height: 46px;
 	}
-	
-	}
+.big .model-2 .text{
+	font-size: 39px !important;
+	padding: 90px 90px 90px !important;
+	position: relative !important;
+	top: 0px !important;
+	height: 271px !important;
+	line-height: 46px
+	}	
+}
 @media (max-width: 1540px) {
 .big .model-3 .text{
 	font-size: 15px !important;
@@ -1593,6 +1608,7 @@ textarea {
 	top: 0px !important;
 	height: 139px !important;
 	}
+
 }
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
