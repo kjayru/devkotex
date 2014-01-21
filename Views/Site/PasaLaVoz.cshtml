@@ -302,6 +302,7 @@
 </div>
 <div id="fb-root"></div>
 <script src="js/vendor/jquery-1.10.2.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/vendor/jquery.ascensor.js"></script>
 <script src="js/vendor/jquery-validation/jquery.validate.min.js"></script>
@@ -347,9 +348,11 @@
 </script>
     <script type="text/javascript">
         $(document).ready(function(){
-        $(".section .video").bgStretcher({
-            images: ['img/video-bg.jpg'], imageWidth: 1366, imageHeight: 643
-        });
+            if ($.browser.version == '8.0') {
+                $(".section .video").bgStretcher({
+                    images: ['img/video-bg.jpg'], imageWidth: 1366, imageHeight: 643
+                });
+            }
         });
     </script>
 </body>
