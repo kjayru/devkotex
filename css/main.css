@@ -17,12 +17,7 @@ body {	line-height: 1;
 blockquote, q {	quotes: none;}
 blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}
 table {	border-collapse: collapse;	border-spacing: 0;}
-
-html,
-button,
-input,
-select,
-textarea {
+html,button,input,select,textarea {
   color: #222;
 }
 header, nav, section, article, aside, footer {
@@ -32,11 +27,7 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -45,9 +36,6 @@ html {
   background: #b3d4fc;
   text-shadow: none;
 }
-/*
- * A better looking default horizontal rule
- */
 hr {
   display: block;
   height: 1px;
