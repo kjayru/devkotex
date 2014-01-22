@@ -337,8 +337,8 @@ textarea {
   position: relative;
 }
 .section.video {
-  /*background: url(../img/video-bg.jpg) no-repeat;
-  background-size: cover;*/
+  background: url(../img/video-bg.jpg) no-repeat;
+  background-size: cover;
 }
 .section.video .header {
   height: 70px;
